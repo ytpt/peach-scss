@@ -1,0 +1,137 @@
+%text-color {
+    color: #444444;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    @extend %text-color;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    @extend %text-color;
+    &:hover {
+        color: #8b8b8b;
+        transition: color 0.15s;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 15px 0 15px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding: 0 5px 60px 0;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 11px;
+    padding-bottom: 16px;
+}
+
+.header__menu-item:nth-child(2n+1){
+    padding-left: 5px;
+}
+
+.header__menu-item:nth-child(2n){
+    padding-left: 10px;
+}
+
+.header__menu-link {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.header__content {
+    position: relative;
+}
+
+.header__text {
+    position: absolute;
+    top: 40px;
+    left: 5px
+}
+
+.header__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    padding-bottom: 20px;
+}
+
+.header__button {
+    background: #B01736;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+    padding: 6.5px 25.5px;
+    cursor: pointer;
+}
+
+/*About*/
+.about {
+    padding-bottom: 28px;
+}
+
+.about__title > span {
+    color: #A30C33;
+}
+
+.about__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    padding: 24px 5px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
+}
+
+.about__numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.about__numbers-item {
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.about__numbers-item:last-child {
+    max-width: 180px;
+}
+
+.about__numbers-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 80%;
+    color: #A30C33;
+    opacity: 0.95;
+}
+
+.about__numbers-subtitle {
+    line-height: 150%;
+}
