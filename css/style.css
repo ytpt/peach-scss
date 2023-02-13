@@ -20,17 +20,13 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-a:hover {
-  color: #8b8b8b;
-  -webkit-transition: color 0.15s;
-  transition: color 0.15s;
-}
 
 .container {
   width: 100%;
   max-width: 320px;
   padding: 16px 15px 0 15px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Header */
@@ -64,6 +60,11 @@ a:hover {
   font-size: 14px;
   line-height: 16px;
   font-weight: 600;
+}
+.header__menu-link:hover {
+  color: #8b8b8b;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
 }
 
 .header__content {
@@ -150,4 +151,77 @@ a:hover {
 
 .about__numbers-subtitle {
   line-height: 150%;
+}
+
+/*Map*/
+.map__container {
+  overflow-x: scroll;
+}
+
+.map__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 5px 0 5px;
+}
+
+.map__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  padding-right: 6px;
+}
+
+.map__arrow {
+  cursor: pointer;
+}
+
+.map__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map__nav-item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px 16px 0 5px;
+}
+.map__nav-item:hover {
+  color: #A30C33;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
+}
+
+.active {
+  color: #A30C33;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #A30C33;
+}
+
+/*Mission*/
+.mission__container {
+  background-color: #A30C33;
+  background-image: url("assets/mission-left-pattern.svg");
+}
+
+.mission__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 32px;
+}
+
+.mission__subtitle {
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 5px 32px 5px;
 }

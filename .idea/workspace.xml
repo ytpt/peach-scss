@@ -10,8 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="add header and about blocks in index.html; add styles in style.scss">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Map.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -45,8 +51,16 @@
       <option name="presentableId" value="Default" />
       <updated>1676268724321</updated>
       <workItem from="1676268725396" duration="2093000" />
-      <workItem from="1676271048171" duration="13031000" />
+      <workItem from="1676271048171" duration="19018000" />
     </task>
+    <task id="LOCAL-00001" summary="add header and about blocks in index.html; add styles in style.scss">
+      <created>1676298030991</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676298030991</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,11 +78,19 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add header and about blocks in index.html; add styles in style.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add header and about blocks in index.html; add styles in style.scss" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="922" y="171" key="SettingsEditor" timestamp="1676286501692">
+    <state x="922" y="171" key="SettingsEditor" timestamp="1676301557532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="922" y="171" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1676286501692" />
+    <state x="922" y="171" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1676301557532" />
+    <state x="1035" y="259" key="Vcs.Push.Dialog.v2" timestamp="1676298036741">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1035" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1676298036741" />
     <state x="1106" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1676286854746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
