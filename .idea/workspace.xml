@@ -10,12 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="add header and about blocks in index.html; add styles in style.scss">
+    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="add map and mission blocks in index.html; add styles in style.scss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bg.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +48,8 @@
       <option name="presentableId" value="Default" />
       <updated>1676268724321</updated>
       <workItem from="1676268725396" duration="2093000" />
-      <workItem from="1676271048171" duration="19018000" />
+      <workItem from="1676271048171" duration="19159000" />
+      <workItem from="1676549732162" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="add header and about blocks in index.html; add styles in style.scss">
       <created>1676298030991</created>
@@ -60,7 +58,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676298030991</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add map and mission blocks in index.html; add styles in style.scss">
+      <created>1676305906978</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676305906978</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,7 +85,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add header and about blocks in index.html; add styles in style.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="add header and about blocks in index.html; add styles in style.scss" />
+    <MESSAGE value="add map and mission blocks in index.html; add styles in style.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add map and mission blocks in index.html; add styles in style.scss" />
   </component>
   <component name="WindowStateProjectService">
     <state x="922" y="171" key="SettingsEditor" timestamp="1676301557532">

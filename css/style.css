@@ -158,6 +158,11 @@ a {
   overflow-x: scroll;
 }
 
+.map__container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 .map__text {
   display: -webkit-box;
   display: -ms-flexbox;
