@@ -209,7 +209,10 @@ a {
 
 /*Mission*/
 .mission__container {
-    background-color: #A30C33;
+    background:
+        url("../assets/mission-right-pattern.svg") no-repeat center right,
+        url("../assets/mission-left-pattern.svg") no-repeat center left,
+        #A30C33;
 }
 
 .mission__title {

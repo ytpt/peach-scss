@@ -10,10 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="delete scrollbar on map in style.scss">
+    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="add solutions block to index.html; add styles to solutions block in style.scss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
       <workItem from="1676268725396" duration="2093000" />
       <workItem from="1676271048171" duration="19159000" />
       <workItem from="1676549732162" duration="10501000" />
-      <workItem from="1676621043456" duration="7075000" />
+      <workItem from="1676621043456" duration="7863000" />
     </task>
     <task id="LOCAL-00001" summary="add header and about blocks in index.html; add styles in style.scss">
       <created>1676298030991</created>
@@ -74,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676550701487</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add solutions block to index.html; add styles to solutions block in style.scss">
+      <created>1676638191847</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676638191847</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,7 +102,8 @@
     <MESSAGE value="add header and about blocks in index.html; add styles in style.scss" />
     <MESSAGE value="add map and mission blocks in index.html; add styles in style.scss" />
     <MESSAGE value="delete scrollbar on map in style.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete scrollbar on map in style.scss" />
+    <MESSAGE value="add solutions block to index.html; add styles to solutions block in style.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add solutions block to index.html; add styles to solutions block in style.scss" />
   </component>
   <component name="WindowStateProjectService">
     <state x="922" y="171" key="SettingsEditor" timestamp="1676301557532">
