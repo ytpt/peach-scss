@@ -2,6 +2,30 @@
     color: #444444;
 }
 
+%title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+}
+
+%bg-shadow {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(45, 54, 83, 1);
+    opacity: 0.6;
+}
+
+@mixin bg-image($url) {
+    background: $url top center;
+    position: relative;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -71,10 +95,8 @@ a {
 }
 
 .header__title {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 100%;
     padding-bottom: 20px;
+    @extend %title;
 }
 
 .header__button {
@@ -188,17 +210,13 @@ a {
 /*Mission*/
 .mission__container {
     background-color: #A30C33;
-    background-image: url("assets/mission-left-pattern.svg");
 }
 
-
 .mission__title {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 100%;
     text-align: center;
     color: #FFFFFF;
     padding-top: 32px;
+    @extend %title;
 }
 
 .mission__subtitle {
@@ -207,4 +225,116 @@ a {
     text-align: center;
     color: #FFFFFF;
     padding: 10px 5px 32px 5px;
+}
+
+/*Solutions*/
+.solutions__container {
+    padding: 50px 0;
+}
+
+.solutions__title {
+    text-align: center;
+    @extend %text-color;
+    @extend %title;
+}
+
+.solutions__nav {
+    padding: 15px 7px 0 3px;
+}
+
+.solutions__nav-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+.solutions__nav-item:before {
+    @extend %bg-shadow;
+}
+
+.solutions__nav-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFFFFF;
+    z-index: 100;
+}
+
+.solutions__nav-subtitle {
+    display: none;
+}
+
+.solutions__nav-arrow {
+    z-index: 100;
+}
+
+.solutions__nav-item:nth-child(1) {
+    @include bg-image(url("../assets/solutions-solutions.jpg"));
+}
+
+.solutions__nav-item:nth-child(2) {
+    @include bg-image(url("../assets/solutions-cyberprotection.jpg"));
+}
+
+.solutions__nav-item:nth-child(3) {
+    @include bg-image(url("../assets/solutions-importsubstitution.jpg"));
+}
+
+.solutions__nav-item:nth-child(4) {
+    @include bg-image(url("../assets/solutions-clouddesicions.jpg"));
+}
+
+.solutions__nav-item:nth-child(5) {
+    @include bg-image(url("../assets/solutions-digitaltransformation.jpg"));
+}
+
+.solutions__nav-item:nth-child(6) {
+    @include bg-image(url("../assets/solutions-tecnicalsupport.jpg"));
+}
+
+/*Benefits*/
+.benefits__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    text-align: center;
+    color: #444444;
+    padding-top: 24px;
+}
+
+.benefits__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    padding: 40px 20px 24px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.benefits__nav-item {
+    text-align: center;
+}
+
+.benefits__nav-icon:nth-child(1) {
+    background-image: url("../assets/benefits-DMS.svg");
+}
+
+.benefits__nav-icon {
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.05;
+}
+
+.benefits__nav-title {
+    max-width: 120px;
+    line-height: 110%;
+    padding-top: 10px;
+    @extend %text-color;
 }
