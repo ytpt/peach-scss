@@ -1,12 +1,6 @@
-.benefits__list-title, .benefits__title, .solutions__title, a, html,
+a, html,
 body {
   color: #444444;
-}
-
-.solutions__title, .mission__title, .header__title {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 100%;
 }
 
 .solutions__nav-item:before {
@@ -98,6 +92,9 @@ a {
 
 .header__title {
   padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
 }
 
 .header__button {
@@ -122,14 +119,14 @@ a {
 }
 
 .about__title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 120%;
   padding: 24px 5px;
   text-align: center;
   background: #FFFFFF;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
           box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
 }
 
 .about__numbers {
@@ -158,11 +155,11 @@ a {
 }
 
 .about__numbers-title {
+  color: #A30C33;
+  opacity: 0.95;
   font-weight: 600;
   font-size: 40px;
   line-height: 80%;
-  color: #A30C33;
-  opacity: 0.95;
 }
 
 .about__numbers-subtitle {
@@ -190,10 +187,10 @@ a {
 }
 
 .map__title {
+  padding-right: 6px;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
-  padding-right: 6px;
 }
 
 .map__arrow {
@@ -207,10 +204,10 @@ a {
 }
 
 .map__nav-item {
+  margin: 20px 16px 0 5px;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  margin: 20px 16px 0 5px;
 }
 .map__nav-item:hover {
   color: #A30C33;
@@ -233,14 +230,18 @@ a {
   text-align: center;
   color: #FFFFFF;
   padding-top: 32px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
 }
 
 .mission__subtitle {
-  font-size: 16px;
-  line-height: 130%;
   text-align: center;
   color: #FFFFFF;
   padding: 10px 5px 32px 5px;
+  font-weight: 0;
+  font-size: 16px;
+  line-height: 130%;
 }
 
 /*Solutions*/
@@ -250,6 +251,9 @@ a {
 
 .solutions__title {
   text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
 }
 
 .solutions__nav {
@@ -269,11 +273,11 @@ a {
 }
 
 .solutions__nav-title {
+  color: #FFFFFF;
+  z-index: 100;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
-  color: #FFFFFF;
-  z-index: 100;
 }
 
 .solutions__nav-subtitle {
@@ -316,11 +320,11 @@ a {
 
 /*Benefits*/
 .benefits__title {
+  text-align: center;
+  padding: 24px 0 40px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 100%;
-  text-align: center;
-  padding-top: 24px;
 }
 
 .benefits__list {
@@ -336,7 +340,7 @@ a {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  padding: 40px 20px 24px 20px;
+  padding: 0 20px 24px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -355,23 +359,37 @@ a {
 }
 
 .benefits__list-circle {
+  width: 80px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgb(242, 242, 242);
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgb(242, 242, 242);
+  border-radius: 50%;
 }
 
 .benefits__list-title {
   max-width: 110px;
   line-height: 110%;
   padding-top: 10px;
+}
+
+.benefits-extra__title {
+  text-align: center;
+  padding: 24px 0 25px 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.benefits-extra__subtitle {
+  display: block;
+  color: #B01736;
+  padding-top: 4px;
 }

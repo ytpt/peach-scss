@@ -2,12 +2,6 @@
     color: #444444;
 }
 
-%title {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 100%;
-}
-
 %bg-shadow {
     content: '';
     position: absolute;
@@ -19,6 +13,12 @@
     bottom: 0;
     background-color:rgba(45, 54, 83, 1);
     opacity: 0.6;
+}
+
+@mixin title($w, $s, $h) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $h;
 }
 
 @mixin bg-image($url) {
@@ -33,10 +33,9 @@
 html,
 body {
     font-family: 'Proxima Nova', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     background-color: #FFFFFF;
     @extend %text-color;
+    @include title(400, 16px 0);
 }
 
 a {
@@ -75,9 +74,7 @@ a {
 }
 
 .header__menu-link {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 600;
+    @include title(600, 14px, 16px);
     &:hover {
         color: #8b8b8b;
         transition: color 0.15s;
@@ -96,19 +93,17 @@ a {
 
 .header__title {
     padding-bottom: 20px;
-    @extend %title;
+    @include title(600, 28px, 100%);
 }
 
 .header__button {
     background: #B01736;
     border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
     color: #FFFFFF;
     border: none;
     padding: 6.5px 25.5px;
     cursor: pointer;
+    @include title(600, 16px, 19px);
 }
 
 /*About*/
@@ -121,13 +116,11 @@ a {
 }
 
 .about__title {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 120%;
     padding: 24px 5px;
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
+    @include title(600, 16px, 120%);
 }
 
 .about__numbers {
@@ -148,11 +141,9 @@ a {
 }
 
 .about__numbers-title {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 80%;
     color: #A30C33;
     opacity: 0.95;
+    @include title(600, 40px, 80%);
 }
 
 .about__numbers-subtitle {
@@ -176,10 +167,8 @@ a {
 }
 
 .map__title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 100%;
     padding-right: 6px;
+    @include title(600, 20px, 100%);
 }
 
 .map__arrow {
@@ -191,10 +180,8 @@ a {
 }
 
 .map__nav-item {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
     margin: 20px 16px 0 5px;
+    @include title(600, 14px, 16px);
     &:hover {
         color: #A30C33;
         transition: color 0.15s;
@@ -219,15 +206,14 @@ a {
     text-align: center;
     color: #FFFFFF;
     padding-top: 32px;
-    @extend %title;
+    @include title(600, 28px, 100%);
 }
 
 .mission__subtitle {
-    font-size: 16px;
-    line-height: 130%;
     text-align: center;
     color: #FFFFFF;
     padding: 10px 5px 32px 5px;
+    @include  title(0,16px, 130%);
 }
 
 /*Solutions*/
@@ -237,8 +223,7 @@ a {
 
 .solutions__title {
     text-align: center;
-    @extend %text-color;
-    @extend %title;
+    @include title(600, 28px, 100%);
 }
 
 .solutions__nav {
@@ -258,11 +243,9 @@ a {
 }
 
 .solutions__nav-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 100%;
     color: #FFFFFF;
     z-index: 100;
+    @include title(600, 20px, 100%);
 }
 
 .solutions__nav-subtitle {
@@ -299,12 +282,9 @@ a {
 
 /*Benefits*/
 .benefits__title {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 100%;
     text-align: center;
-    padding-top: 24px;
-    @extend  %text-color;
+    padding: 24px 0 40px 0;
+    @include  title(600, 28px, 100%);
 }
 
 .benefits__list {
@@ -313,7 +293,7 @@ a {
     flex-wrap: wrap;
     row-gap: 25px;
     column-gap: 30px;
-    padding: 40px 20px 24px 20px;
+    padding: 0 20px 24px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -325,18 +305,29 @@ a {
 }
 
 .benefits__list-circle {
-    display: flex;
-    background-color: rgba(242, 242, 242, 1);
-    border-radius: 50%;
     width: 80px;
     height: 80px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 50%;
 }
 
 .benefits__list-title {
     max-width: 110px;
     line-height: 110%;
     padding-top: 10px;
-    @extend %text-color;
+}
+
+.benefits-extra__title {
+    text-align: center;
+    padding: 24px 0 25px 0;
+    @include title(600, 22px, 120%);
+}
+
+.benefits-extra__subtitle {
+    display: block;
+    color: #B01736;
+    padding-top: 4px;
 }

@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="refactor styles of mission block in style.scss">
+    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="add benefit block in index.html and styles of benefit block in style.scss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -51,7 +51,7 @@
       <workItem from="1676268725396" duration="2093000" />
       <workItem from="1676271048171" duration="19159000" />
       <workItem from="1676549732162" duration="10501000" />
-      <workItem from="1676621043456" duration="13959000" />
+      <workItem from="1676621043456" duration="16042000" />
     </task>
     <task id="LOCAL-00001" summary="add header and about blocks in index.html; add styles in style.scss">
       <created>1676298030991</created>
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676638974995</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add benefit block in index.html and styles of benefit block in style.scss">
+      <created>1676648370219</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676648370219</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +119,8 @@
     <MESSAGE value="delete scrollbar on map in style.scss" />
     <MESSAGE value="add solutions block to index.html; add styles to solutions block in style.scss" />
     <MESSAGE value="refactor styles of mission block in style.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor styles of mission block in style.scss" />
+    <MESSAGE value="add benefit block in index.html and styles of benefit block in style.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add benefit block in index.html and styles of benefit block in style.scss" />
   </component>
   <component name="WindowStateProjectService">
     <state x="922" y="171" key="SettingsEditor" timestamp="1676301557532">
