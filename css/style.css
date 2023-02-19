@@ -1,4 +1,4 @@
-a, html,
+.corp-life__title, a, html,
 body {
   color: #444444;
 }
@@ -24,9 +24,9 @@ body {
 html,
 body {
   font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 a {
@@ -70,9 +70,9 @@ a {
 }
 
 .header__menu-link {
+  font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 600;
 }
 .header__menu-link:hover {
   color: #8b8b8b;
@@ -100,13 +100,13 @@ a {
 .header__button {
   background: #B01736;
   border-radius: 8px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
   color: #FFFFFF;
   border: none;
   padding: 6.5px 25.5px;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 /*About*/
@@ -392,4 +392,19 @@ a {
   display: block;
   color: #B01736;
   padding-top: 4px;
+}
+
+/*Corp-life*/
+.corp-life {
+  padding: 50px 0;
+}
+
+.corp-life__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+}
+
+.swiper {
+  margin: 15px 5px 0 5px;
 }

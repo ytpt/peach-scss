@@ -35,7 +35,8 @@ body {
     font-family: 'Proxima Nova', sans-serif;
     background-color: #FFFFFF;
     @extend %text-color;
-    @include title(400, 16px 0);
+    font-weight: 400;
+    font-size: 16px;
 }
 
 a {
@@ -330,4 +331,18 @@ a {
     display: block;
     color: #B01736;
     padding-top: 4px;
+}
+
+/*Corp-life*/
+.corp-life {
+    padding: 50px 0;
+}
+
+.corp-life__title {
+    @include title(600, 28px, 100%);
+    @extend %text-color;
+}
+
+.swiper {
+    margin: 15px 5px 0 5px;
 }
