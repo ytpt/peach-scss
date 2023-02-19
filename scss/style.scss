@@ -26,6 +26,11 @@
     position: relative;
 }
 
+@mixin flex($dir) {
+    display: flex;
+    flex-direction: $dir;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -53,17 +58,26 @@ a {
     overflow: hidden;
 }
 
+@media (min-width: 1024px) {
+    html, body {
+        font-size: 18px;
+    }
+    .container {
+        max-width: 1250px;
+        padding: 0;
+    }
+}
+
 /* Header */
 .header {
-    padding: 0 5px 60px 0;
+    padding-right: 5px;
 }
 
 .header__menu-list {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     padding-top: 11px;
     padding-bottom: 16px;
+    @include flex(row);
 }
 
 .header__menu-item:nth-child(2n+1){
@@ -82,22 +96,54 @@ a {
     }
 }
 
-.header__content {
-    position: relative;
+@media (min-width: 1024px) {
+    .header {
+        padding: 0;
+    }
+
+    .header__container {
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        padding: 0 70px;
+        @include flex(row);
+    }
+
+    .header__menu-list {
+        @include title(600, 18px, 20px);
+        column-gap: 20px;
+    }
+
+    .header__menu-item:nth-child(2n+1),
+    .header__menu-item:nth-child(2n) {
+        padding: 0;
+    }
+
+    .header__menu-link {
+        font-size: 18px;
+    }
 }
 
-.header__text {
-    position: absolute;
-    top: 40px;
-    left: 5px
+/*Main*/
+.main__content {
+    max-width: 290px;
+    max-height: 300px;
+    background: url("../assets/main-bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding-bottom: 60px;
 }
 
-.header__title {
-    padding-bottom: 20px;
+.main__text {
+    padding: 40px 5px 96px 5px;
+}
+
+.main__title {
+    max-width: 280px;
+    padding: 0 20px 20px 0;
     @include title(600, 28px, 100%);
 }
 
-.header__button {
+.main__button {
     background: #B01736;
     border-radius: 8px;
     color: #FFFFFF;
@@ -105,6 +151,34 @@ a {
     padding: 6.5px 25.5px;
     cursor: pointer;
     @include title(600, 16px, 19px);
+}
+
+@media (min-width: 1024px) {
+    .main__content {
+        max-width: 100%;
+        max-height: 100%;
+        background-size: contain;
+    }
+
+    .main__text {
+        padding: 140px 158px;
+        align-items: center;
+    }
+
+    .main__title {
+        max-width: 709px;
+        margin-bottom: 60px;
+        @include title(600, 56px, 100%);
+    }
+
+    .main__button {
+        padding: 18px 28px;
+        @include title(600, 18px, 20px);
+    }
+
+    .main__button:hover {
+        background: #A30C33;
+    }
 }
 
 /*About*/
@@ -125,11 +199,10 @@ a {
 }
 
 .about__numbers {
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 50px;
+    @include flex(row);
 }
 
 .about__numbers-item {
@@ -147,8 +220,51 @@ a {
     @include title(600, 40px, 80%);
 }
 
+.about__numbers-title > span:first-child {
+    padding-right: 4px;
+}
+
+.about__numbers-title > span {
+    padding-left: 4px;
+}
+
 .about__numbers-subtitle {
     line-height: 150%;
+}
+
+@media (min-width: 1024px) {
+    .about {
+        padding-bottom: 100px;
+    }
+
+    .about__title {
+        margin: 70px 100px;
+        padding: 99px 110px;
+        @include title(600, 32px, 120%);
+    }
+
+    .about__numbers {
+        column-gap: 170px;
+        row-gap: 80px;
+        padding: 0 180px;
+    }
+
+    .about__numbers-item {
+        text-align: left;
+        padding-bottom: 0;
+    }
+
+    .about__numbers-title {
+        @include title(600, 80px, 80%);
+    }
+
+    .about__numbers-title > span:first-child {
+        padding-right: 10px;
+    }
+
+    .about__numbers-title > span {
+        padding-left: 10px;
+    }
 }
 
 /*Map*/
@@ -193,6 +309,12 @@ a {
     color: #A30C33;
     padding-bottom: 20px;
     border-bottom: 2px solid #A30C33;
+}
+
+@media (min-width: 1024px) {
+    .map__title {
+        @include title(600, 24px, 100%);
+    }
 }
 
 /*Mission*/
@@ -299,10 +421,9 @@ a {
 }
 
 .benefits__list-item {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
+    @include flex(column);
 }
 
 .benefits__list-circle {
