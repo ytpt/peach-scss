@@ -327,8 +327,12 @@ a {
         bottom: -20px;
         left: 0;
         background-color: #A30C33;
-        transition: width .2s;
     }
+}
+
+.map__img {
+    max-width: 862px;
+    height: 430px;
 }
 
 @media (min-width: 1024px) {
@@ -361,6 +365,12 @@ a {
         &:before {
             bottom: -29px;
         }
+    }
+
+    .map__img {
+        max-width: 100%;
+        height: 100%;
+        padding: 90px 30px 105px 30px;
     }
 }
 

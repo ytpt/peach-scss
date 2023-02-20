@@ -3,11 +3,6 @@ const swiper = new Swiper('.swiper', {
     loop: true
 });
 
-// const REGION_ACTIVE = document.querySelector('.active');
-// const UNDERLINE_ELEM = document.createElement('div');
-// UNDERLINE_ELEM.classList.add('underline');
-// document.querySelector('.map__header').appendChild(UNDERLINE_ELEM);
-
 const REGION_BUTTONS = document.querySelectorAll('.map__nav-item');
 REGION_BUTTONS.forEach(region => {
     region.addEventListener('click', function() {
