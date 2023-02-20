@@ -375,25 +375,43 @@ a {
 }
 
 /*Mission*/
-.mission__container {
+.mission__content {
     background:
-        url("../assets/mission-right-pattern.svg") no-repeat center right,
-        url("../assets/mission-left-pattern.svg") no-repeat center left,
-        #A30C33;
+            url("../assets/mission-right-pattern.svg") no-repeat center right,
+            url("../assets/mission-left-pattern.svg") no-repeat center left,
+            #A30C33;
+    background-size: auto;
+    row-gap: 10px;
+    padding: 51px 5px 32px 5px;
+    @include flex(column);
 }
 
 .mission__title {
     text-align: center;
     color: #FFFFFF;
-    padding-top: 32px;
     @include title(600, 28px, 100%);
 }
 
 .mission__subtitle {
     text-align: center;
     color: #FFFFFF;
-    padding: 10px 5px 32px 5px;
-    @include  title(0,16px, 130%);
+    @include title(400,16px, 130%);
+}
+
+@media (min-width: 1024px) {
+    .mission__content {
+        row-gap: 40px;
+        padding: 139px 72px 140px 72px;
+        background-size: 30% 80%;
+    }
+
+    .mission__title {
+        @include title(600, 56px, 100%);
+    }
+
+    .mission__subtitle {
+        @include title(400, 32px, 150%);
+    }
 }
 
 /*Solutions*/
