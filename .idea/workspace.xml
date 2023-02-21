@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="refactor REGION_BUTTONS onclick function in script.js">
+    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="refactor map block styles in style.scss">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,7 @@
       <workItem from="1676621043456" duration="17401000" />
       <workItem from="1676783445147" duration="15867000" />
       <workItem from="1676896255427" duration="11512000" />
-      <workItem from="1676950969309" duration="733000" />
+      <workItem from="1676950969309" duration="955000" />
     </task>
     <task id="LOCAL-00001" summary="add header and about blocks in index.html; add styles in style.scss">
       <created>1676298030991</created>
@@ -144,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676951508119</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refactor map block styles in style.scss">
+      <created>1676951759028</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676951759028</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +185,8 @@
     <MESSAGE value="add desktop view to map block in style.scss;" />
     <MESSAGE value="add desktop view to mission block in style.scss;" />
     <MESSAGE value="refactor REGION_BUTTONS onclick function in script.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor REGION_BUTTONS onclick function in script.js" />
+    <MESSAGE value="refactor map block styles in style.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor map block styles in style.scss" />
   </component>
   <component name="WindowStateProjectService">
     <state x="922" y="171" key="SettingsEditor" timestamp="1676301557532">

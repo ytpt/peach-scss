@@ -285,12 +285,12 @@ a {
 }
 
 .map__text {
-    display: flex;
     align-items: center;
+    column-gap: 6px;
+    @include flex(row);
 }
 
 .map__title {
-    padding-right: 6px;
     @include title(600, 20px, 100%);
 }
 
@@ -347,6 +347,7 @@ a {
     }
 
     .map__text {
+        column-gap: 12px;
         padding: 0;
     }
 
