@@ -477,6 +477,7 @@ a {
     justify-content: space-between;
     padding: 20px 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 
     &:before {
         @extend %bg-shadow;
@@ -508,6 +509,7 @@ a {
 }
 
 .solutions__nav-title {
+    width: 225px;
     color: #FFFFFF;
     z-index: 100;
     @include title(600, 20px, 100%);
@@ -519,6 +521,67 @@ a {
 
 .solutions__nav-arrow {
     z-index: 100;
+}
+
+@media (min-width: 1024px) {
+    .solutions__container {
+        padding: 100px 0;
+    }
+
+    .solutions__title {
+        padding-bottom: 55px;
+        @include title(600, 56px, 100%);
+    }
+
+    .solutions__nav {
+        display: grid;
+        grid-template-columns: 615px 615px;
+        column-gap: 20px;
+        row-gap: 23px;
+        padding: 0;
+    }
+
+    .solutions__nav-item {
+        height: 260px;
+        margin: 0;
+        padding: 20px 28px;
+
+        &:before {
+            height: 80px;
+            top: 69.5%;
+            @extend %bg-shadow;
+        }
+
+        &:hover:before {
+            height: 100%;
+            top: 0;
+            transition: all .2s;
+        }
+    }
+
+    .solutions__nav-title {
+        width: 320px;
+        align-self: end;
+        @include title(600, 24px, 100%);
+    }
+
+    .solutions__nav-subtitle {
+        max-width: 480px;
+        text-align: left;
+        color: #FFFFFF;
+        z-index: 100;
+        @include title(400, 17px, 140%);
+    }
+
+    .solutions__nav-arrow {
+        display: none;
+    }
+
+    .hover {
+        justify-content: flex-start;
+        row-gap: 20px;
+        @include flex(column);
+    }
 }
 
 /*Benefits*/
