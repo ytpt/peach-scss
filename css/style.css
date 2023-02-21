@@ -307,6 +307,7 @@ a {
   height: 95px;
   -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
           box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+  padding: 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

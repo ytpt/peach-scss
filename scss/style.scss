@@ -280,6 +280,7 @@ a {
     width: fit-content;
     height: 95px;
     box-shadow: 0 0 40px rgb(0 0 0 / 6%);
+    padding: 0 5px;
     @include flex(column);
 }
 
