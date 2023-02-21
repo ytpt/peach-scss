@@ -44,6 +44,10 @@
     flex-direction: $dir;
 }
 
+@mixin  box-shadow($px, $opacity) {
+    box-shadow: 0 0 $px rgba(0, 0, 0, $opacity);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -212,8 +216,8 @@ a {
     padding: 24px 5px;
     text-align: center;
     background: #FFFFFF;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
     @include title(600, 16px, 120%);
+    @include box-shadow(16px, 0.08);
 }
 
 .about__numbers {
@@ -300,9 +304,9 @@ a {
     row-gap: 20px;
     width: fit-content;
     height: 95px;
-    box-shadow: 0 0 40px rgb(0 0 0 / 6%);
     padding: 0 5px;
     @include flex(column);
+    @include box-shadow(40px, 6%);
 }
 
 .map__text {
@@ -585,9 +589,13 @@ a {
 }
 
 /*Benefits*/
+.benefits__container {
+    padding: 24px 0;
+    @include box-shadow(16px, 0.06);
+}
+
 .benefits__title {
     text-align: center;
-    padding: 24px 0 40px 0;
     @include  title(600, 28px, 100%);
 }
 
@@ -633,6 +641,17 @@ a {
     display: block;
     color: #B01736;
     padding-top: 4px;
+}
+
+@media (min-width: 1024px) {
+    .benefits__container {
+        padding: 0 70px 100px 70px;
+    }
+
+    .benefits__title {
+        padding-bottom: 50px;
+        @include title(600, 56px, 100%);
+    }
 }
 
 /*Corp-life*/

@@ -212,11 +212,11 @@ a {
   padding: 24px 5px;
   text-align: center;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
   font-weight: 600;
   font-size: 16px;
   line-height: 120%;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
 }
 
 .about__numbers {
@@ -318,8 +318,6 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   height: 95px;
-  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
-          box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
   padding: 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,6 +326,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
 }
 
 .map__text {
@@ -659,9 +659,14 @@ a {
   }
 }
 /*Benefits*/
+.benefits__container {
+  padding: 24px 0;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.06);
+}
+
 .benefits__title {
   text-align: center;
-  padding: 24px 0 40px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 100%;
@@ -740,6 +745,17 @@ a {
   padding-top: 4px;
 }
 
+@media (min-width: 1024px) {
+  .benefits__container {
+    padding: 0 70px 100px 70px;
+  }
+  .benefits__title {
+    padding-bottom: 50px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 100%;
+  }
+}
 /*Corp-life*/
 .corp-life {
   padding: 50px 0;
