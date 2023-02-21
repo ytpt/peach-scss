@@ -1,4 +1,4 @@
-.solutions__nav-item .corp-life__title, a, html,
+.corp-life__title, a, html,
 body {
   color: #444444;
 }
@@ -511,6 +511,7 @@ a {
     line-height: 100%;
   }
   .mission__subtitle {
+    padding: 0 5px;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
@@ -542,54 +543,58 @@ a {
           justify-content: space-between;
   padding: 20px 10px;
   margin-bottom: 10px;
-  /*Benefits*/
-  /*Corp-life*/
 }
-.solutions__nav-item .solutions__nav-title {
+.solutions__nav-item:nth-child(1) {
+  background: url("../assets/solutions-solutions.jpg") top center;
+  position: relative;
+}
+.solutions__nav-item:nth-child(2) {
+  background: url("../assets/solutions-cyberprotection.jpg") top center;
+  position: relative;
+}
+.solutions__nav-item:nth-child(3) {
+  background: url("../assets/solutions-importsubstitution.jpg") top center;
+  position: relative;
+}
+.solutions__nav-item:nth-child(4) {
+  background: url("../assets/solutions-clouddesicions.jpg") top center;
+  position: relative;
+}
+.solutions__nav-item:nth-child(5) {
+  background: url("../assets/solutions-digitaltransformation.jpg") top center;
+  position: relative;
+}
+.solutions__nav-item:nth-child(6) {
+  background: url("../assets/solutions-tecnicalsupport.jpg") top center;
+  position: relative;
+}
+
+.solutions__nav-title {
   color: #FFFFFF;
   z-index: 100;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
 }
-.solutions__nav-item .solutions__nav-subtitle {
+
+.solutions__nav-subtitle {
   display: none;
 }
-.solutions__nav-item .solutions__nav-arrow {
+
+.solutions__nav-arrow {
   z-index: 100;
 }
-.solutions__nav-item .solutions__nav-item:nth-child(1) {
-  background: url("../assets/solutions-solutions.jpg") top center;
-  position: relative;
-}
-.solutions__nav-item .solutions__nav-item:nth-child(2) {
-  background: url("../assets/solutions-cyberprotection.jpg") top center;
-  position: relative;
-}
-.solutions__nav-item .solutions__nav-item:nth-child(3) {
-  background: url("../assets/solutions-importsubstitution.jpg") top center;
-  position: relative;
-}
-.solutions__nav-item .solutions__nav-item:nth-child(4) {
-  background: url("../assets/solutions-clouddesicions.jpg") top center;
-  position: relative;
-}
-.solutions__nav-item .solutions__nav-item:nth-child(5) {
-  background: url("../assets/solutions-digitaltransformation.jpg") top center;
-  position: relative;
-}
-.solutions__nav-item .solutions__nav-item:nth-child(6) {
-  background: url("../assets/solutions-tecnicalsupport.jpg") top center;
-  position: relative;
-}
-.solutions__nav-item .benefits__title {
+
+/*Benefits*/
+.benefits__title {
   text-align: center;
   padding: 24px 0 40px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 100%;
 }
-.solutions__nav-item .benefits__list {
+
+.benefits__list {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -609,7 +614,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.solutions__nav-item .benefits__list-item {
+
+.benefits__list-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -622,7 +628,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.solutions__nav-item .benefits__list-circle {
+
+.benefits__list-circle {
   width: 80px;
   height: 80px;
   display: -webkit-box;
@@ -637,33 +644,40 @@ a {
   background-color: rgb(242, 242, 242);
   border-radius: 50%;
 }
-.solutions__nav-item .benefits__list-title {
+
+.benefits__list-title {
   max-width: 110px;
   padding-top: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 110%;
 }
-.solutions__nav-item .benefits-extra__title {
+
+.benefits-extra__title {
   text-align: center;
   padding: 24px 0 25px 0;
   font-weight: 600;
   font-size: 22px;
   line-height: 120%;
 }
-.solutions__nav-item .benefits-extra__subtitle {
+
+.benefits-extra__subtitle {
   display: block;
   color: #B01736;
   padding-top: 4px;
 }
-.solutions__nav-item .corp-life {
+
+/*Corp-life*/
+.corp-life {
   padding: 50px 0;
 }
-.solutions__nav-item .corp-life__title {
+
+.corp-life__title {
   font-weight: 600;
   font-size: 28px;
   line-height: 100%;
 }
-.solutions__nav-item .swiper {
+
+.swiper {
   margin: 15px 5px 0 5px;
 }
