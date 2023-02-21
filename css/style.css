@@ -1,4 +1,4 @@
-.corp-life__title, a, html,
+.solutions__nav-item .corp-life__title, a, html,
 body {
   color: #444444;
 }
@@ -14,6 +14,19 @@ body {
   bottom: 0;
   background-color: rgb(45, 54, 83);
   opacity: 0.6;
+}
+
+.mission__content:after, .mission__content:before {
+  content: "";
+  background: url("../assets/mission-pattern.svg") no-repeat center left;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: 100;
 }
 
 * {
@@ -70,12 +83,11 @@ a {
           flex-direction: row;
 }
 
-.header__menu-item:nth-child(2n+1) {
-  padding-left: 5px;
-}
-
 .header__menu-item:nth-child(2n) {
   padding-left: 10px;
+}
+.header__menu-item:nth-child(2n+1) {
+  padding-left: 5px;
 }
 
 .header__menu-link {
@@ -111,15 +123,14 @@ a {
             flex-direction: row;
   }
   .header__menu-list {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
     -webkit-column-gap: 20px;
        -moz-column-gap: 20px;
             column-gap: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
   }
-  .header__menu-item:nth-child(2n+1),
-.header__menu-item:nth-child(2n) {
+  .header__menu-item:nth-child(2n+1), .header__menu-item:nth-child(2n) {
     padding: 0;
   }
   .header__menu-link {
@@ -166,10 +177,10 @@ a {
     background-size: contain;
   }
   .main__text {
-    padding: 140px 158px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 140px 158px;
   }
   .main__title {
     max-width: 709px;
@@ -249,6 +260,8 @@ a {
 }
 
 .about__numbers-subtitle {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -344,15 +357,19 @@ a {
 }
 
 .map__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .map__nav-item {
@@ -442,7 +459,8 @@ a {
 }
 /*Mission*/
 .mission__content {
-  background: url("../assets/mission-right-pattern.svg") no-repeat center right, url("../assets/mission-left-pattern.svg") no-repeat center left, #A30C33;
+  position: relative;
+  background: #A30C33;
   background-size: auto;
   row-gap: 10px;
   padding: 51px 5px 32px 5px;
@@ -453,6 +471,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.mission__content:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .mission__title {
@@ -476,6 +498,12 @@ a {
     row-gap: 40px;
     padding: 139px 72px 140px 72px;
     background-size: 30% 80%;
+  }
+  .mission__content:before {
+    background-size: 20%;
+  }
+  .mission__content:after {
+    background-size: 20%;
   }
   .mission__title {
     font-weight: 600;
@@ -514,67 +542,54 @@ a {
           justify-content: space-between;
   padding: 20px 10px;
   margin-bottom: 10px;
+  /*Benefits*/
+  /*Corp-life*/
 }
-
-.solutions__nav-title {
+.solutions__nav-item .solutions__nav-title {
   color: #FFFFFF;
   z-index: 100;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
 }
-
-.solutions__nav-subtitle {
+.solutions__nav-item .solutions__nav-subtitle {
   display: none;
 }
-
-.solutions__nav-arrow {
+.solutions__nav-item .solutions__nav-arrow {
   z-index: 100;
 }
-
-.solutions__nav-item:nth-child(1) {
+.solutions__nav-item .solutions__nav-item:nth-child(1) {
   background: url("../assets/solutions-solutions.jpg") top center;
   position: relative;
 }
-
-.solutions__nav-item:nth-child(2) {
+.solutions__nav-item .solutions__nav-item:nth-child(2) {
   background: url("../assets/solutions-cyberprotection.jpg") top center;
   position: relative;
 }
-
-.solutions__nav-item:nth-child(3) {
+.solutions__nav-item .solutions__nav-item:nth-child(3) {
   background: url("../assets/solutions-importsubstitution.jpg") top center;
   position: relative;
 }
-
-.solutions__nav-item:nth-child(4) {
+.solutions__nav-item .solutions__nav-item:nth-child(4) {
   background: url("../assets/solutions-clouddesicions.jpg") top center;
   position: relative;
 }
-
-.solutions__nav-item:nth-child(5) {
+.solutions__nav-item .solutions__nav-item:nth-child(5) {
   background: url("../assets/solutions-digitaltransformation.jpg") top center;
   position: relative;
 }
-
-.solutions__nav-item:nth-child(6) {
+.solutions__nav-item .solutions__nav-item:nth-child(6) {
   background: url("../assets/solutions-tecnicalsupport.jpg") top center;
   position: relative;
 }
-
-/*Benefits*/
-.benefits__title {
+.solutions__nav-item .benefits__title {
   text-align: center;
   padding: 24px 0 40px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 100%;
 }
-
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.solutions__nav-item .benefits__list {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -586,9 +601,15 @@ a {
           column-gap: 30px;
   padding: 0 20px 24px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
-.benefits__list-item {
+.solutions__nav-item .benefits__list-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -601,8 +622,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-.benefits__list-circle {
+.solutions__nav-item .benefits__list-circle {
   width: 80px;
   height: 80px;
   display: -webkit-box;
@@ -617,38 +637,33 @@ a {
   background-color: rgb(242, 242, 242);
   border-radius: 50%;
 }
-
-.benefits__list-title {
+.solutions__nav-item .benefits__list-title {
   max-width: 110px;
-  line-height: 110%;
   padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
 }
-
-.benefits-extra__title {
+.solutions__nav-item .benefits-extra__title {
   text-align: center;
   padding: 24px 0 25px 0;
   font-weight: 600;
   font-size: 22px;
   line-height: 120%;
 }
-
-.benefits-extra__subtitle {
+.solutions__nav-item .benefits-extra__subtitle {
   display: block;
   color: #B01736;
   padding-top: 4px;
 }
-
-/*Corp-life*/
-.corp-life {
+.solutions__nav-item .corp-life {
   padding: 50px 0;
 }
-
-.corp-life__title {
+.solutions__nav-item .corp-life__title {
   font-weight: 600;
   font-size: 28px;
   line-height: 100%;
 }
-
-.swiper {
+.solutions__nav-item .swiper {
   margin: 15px 5px 0 5px;
 }
