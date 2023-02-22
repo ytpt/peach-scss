@@ -44,8 +44,19 @@
     flex-direction: $dir;
 }
 
-@mixin  box-shadow($px, $opacity) {
+@mixin box-shadow($px, $opacity) {
     box-shadow: 0 0 $px rgba(0, 0, 0, $opacity);
+}
+
+@mixin line($left) {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    bottom: 0;
+    left: $left;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.1;
 }
 
 * {
@@ -590,50 +601,65 @@ a {
 
 /*Benefits*/
 .benefits__container {
-    padding: 24px 0;
+    padding: 24px 15px;
     @include box-shadow(16px, 0.06);
 }
 
-.benefits__title {
+.benefits-reg__title {
     text-align: center;
     @include  title(600, 28px, 100%);
 }
 
-.benefits__list {
-    justify-content: space-evenly;
+.benefits-reg__list,
+.benefits-extra__list {
+    justify-content: center;
     flex-wrap: wrap;
     row-gap: 25px;
-    column-gap: 30px;
-    padding: 0 20px 24px 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    @include flex(column);
+    @include flex(row);
 }
 
-.benefits__list-item {
+.benefits-reg__list {
+    position: relative;
+    padding: 40px 20px 24px 20px;
+    column-gap: 10px;
+
+    &:before {
+        @include line(5px);
+    }
+}
+
+.benefits-reg__list-item,
+.benefits-extra__list-item {
     align-items: center;
     text-align: center;
     @include flex(column);
 }
 
-.benefits__list-circle {
+.benefits-reg__list-item {
+    width: 120px;
+}
+
+.benefits-reg__list-circle,
+.benefits-extra__list-circle {
     width: 80px;
     height: 80px;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(242, 242, 242, 1);
     border-radius: 50%;
+    @include flex(row);
 }
 
-.benefits__list-title {
-    max-width: 110px;
+.benefits-reg__list-title,
+.benefits-extra__list-title {
+    max-width: 120px;
     padding-top: 10px;
     @include title(400, 16px, 110%);
 }
 
 .benefits-extra__title {
     text-align: center;
-    padding: 24px 0 25px 0;
+    padding-top: 24px;
     @include title(600, 22px, 120%);
 }
 
@@ -643,23 +669,79 @@ a {
     padding-top: 4px;
 }
 
-@media (min-width: 1024px) {
-    .benefits__container {
-        padding: 0 70px 100px 70px;
-    }
-
-    .benefits__title {
-        padding-bottom: 50px;
-        @include title(600, 56px, 100%);
-    }
+.benefits-extra__list {
+    column-gap: 25px;
+    padding: 25px 52.5px 0 52.5px;
 }
 
+.benefits-extra__list-item {
+    width: 72px;
+}
+
+@media (min-width: 1024px) {
+    .benefits__container {
+        padding: 80px 30px;
+    }
+
+    .benefits-reg__title {
+        @include title(600, 56px, 100%);
+    }
+
+    .benefits-reg__list {
+        justify-content: space-between;
+        column-gap: 17px;
+        padding: 50px 110px 70px 110px;
+
+        &:before {
+            @include line(30px);
+        }
+    }
+
+    .benefits-reg__list-item {
+        width: 178px;
+    }
+
+    .benefits-reg__list-circle,
+    .benefits-extra__list-circle {
+        width: 110px;
+        height: 110px;
+    }
+
+    .benefits-reg__list-title,
+    .benefits-extra__list-title {
+        @include title(400, 18px, 110%);
+    }
+
+    .benefits-reg__list-title {
+        max-width: 100%;
+    }
+
+    .benefits-extra {
+        padding-top: 70px;
+    }
+
+    .benefits-extra__title {
+        padding: 0;
+        @include title(600, 40px, 120%);
+    }
+
+    .benefits-extra__list {
+        justify-content: center;
+        column-gap: 80px;
+        padding-top: 50px;
+    }
+
+    .benefits-extra__list-item {
+        width: 110px;
+    }
+}
 /*Corp-life*/
 .corp-life {
     padding: 50px 0;
 }
 
 .corp-life__title {
+    padding: 50px 0 80px 0;
     @include title(600, 28px, 100%);
     @extend %text-color;
 }

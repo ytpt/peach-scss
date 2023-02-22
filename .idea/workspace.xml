@@ -10,9 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="add styles for desktop solutions block in style.scss; add solutions_items function in script.js">
+    <list default="true" id="320785f2-d9a1-4007-a454-c3552dcf6436" name="Default Changelist" comment="add box-shadow mixin in style.scss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,9 @@
       <workItem from="1676621043456" duration="17401000" />
       <workItem from="1676783445147" duration="15867000" />
       <workItem from="1676896255427" duration="11512000" />
-      <workItem from="1676950969309" duration="15112000" />
+      <workItem from="1676950969309" duration="16348000" />
+      <workItem from="1677049871986" duration="7394000" />
+      <workItem from="1677070518587" duration="2086000" />
     </task>
     <task id="LOCAL-00001" summary="add header and about blocks in index.html; add styles in style.scss">
       <created>1676298030991</created>
@@ -181,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676999128854</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add box-shadow mixin in style.scss">
+      <created>1677000584803</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1677000584803</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +228,8 @@
     <MESSAGE value="refactor all styles in style.scss;&#10;refactor mission block styles in style.scss" />
     <MESSAGE value="refactor all styles in style.scss;" />
     <MESSAGE value="add styles for desktop solutions block in style.scss; add solutions_items function in script.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add styles for desktop solutions block in style.scss; add solutions_items function in script.js" />
+    <MESSAGE value="add box-shadow mixin in style.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add box-shadow mixin in style.scss" />
   </component>
   <component name="WindowStateProjectService">
     <state x="922" y="171" key="SettingsEditor" timestamp="1676301557532">
@@ -229,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1035" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1676653388866" />
-    <state x="1112" y="249" key="run.anything.popup" timestamp="1676997451870">
+    <state x="1112" y="249" key="run.anything.popup" timestamp="1677054737926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1112" y="249" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1676997451870" />
+    <state x="1112" y="249" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1677054737926" />
     <state x="1106" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1676286854746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
