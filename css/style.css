@@ -134,7 +134,9 @@ a {
     padding: 0;
   }
   .header__menu-link {
+    font-weight: 600;
     font-size: 18px;
+    line-height: 20px;
   }
 }
 /*Main*/
@@ -669,7 +671,7 @@ a {
   text-align: center;
   font-weight: 600;
   font-size: 28px;
-  line-height: 100%;
+  line-height: 28px;
 }
 
 .benefits-reg__list,
@@ -756,6 +758,7 @@ a {
 }
 
 .benefits-extra__title {
+  max-width: 80px;
   text-align: center;
   padding-top: 24px;
   font-weight: 600;
@@ -849,6 +852,7 @@ a {
 }
 /*Corp-life*/
 .corp-life__title {
+  padding: 50px 0 80px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 28px;
@@ -875,9 +879,14 @@ a {
   .corp-life__title {
     font-weight: 600;
     font-size: 56px;
-    line-height: 100%;
+    line-height: 56px;
   }
   .swiper {
     margin: 50px 0 0 0;
+  }
+  .swiper-scrollbar {
+    width: 100%;
+    height: 6px;
+    background-color: #A30C33;
   }
 }
