@@ -262,7 +262,7 @@ a {
 }
 
 .about__numbers-subtitle {
-    @include title(400, 16px, 24px);
+    @include title(400, 16px, 19px);
 }
 
 @media (min-width: 1024px) {
@@ -444,7 +444,7 @@ a {
 .mission__subtitle {
     text-align: center;
     color: #FFFFFF;
-    @include title(400,16px, 21px);
+    @include title(400, 16px, 21px);
 }
 
 @media (min-width: 1024px) {
@@ -656,10 +656,6 @@ a {
     @include title(400, 16px, 18px);
 }
 
-.benefits-reg__list-title {
-    max-width: 120px;
-}
-
 .benefits-extra__title {
     max-width: 80px;
     text-align: center;
@@ -679,7 +675,7 @@ a {
 }
 
 .benefits-extra__list-item {
-    width: 72px;
+    width: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -739,12 +735,14 @@ a {
         width: 110px;
     }
 }
+
 /*Corp-life*/
 //.corp-life {
 //    padding: 50px 0;
 //}
 
 .corp-life__title {
+    padding: 50px 0 80px 0;
     @include title(600, 28px, 28px);
     @extend %text-color;
 }

@@ -155,7 +155,7 @@ a {
   padding: 0 20px 20px 0;
   font-weight: 600;
   font-size: 28px;
-  line-height: 100%;
+  line-height: 28px;
 }
 
 .main__button {
@@ -187,7 +187,7 @@ a {
     margin-bottom: 60px;
     font-weight: 600;
     font-size: 56px;
-    line-height: 100%;
+    line-height: 56px;
   }
   .main__button {
     padding: 18px 28px;
@@ -214,7 +214,7 @@ a {
   background: #FFFFFF;
   font-weight: 600;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 19px;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
           box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
 }
@@ -249,7 +249,7 @@ a {
   opacity: 0.95;
   font-weight: 600;
   font-size: 40px;
-  line-height: 80%;
+  line-height: 32px;
 }
 
 .about__numbers-title > span {
@@ -262,7 +262,7 @@ a {
 .about__numbers-subtitle {
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 19px;
 }
 
 @media (min-width: 1024px) {
@@ -274,7 +274,7 @@ a {
     padding: 99px 110px;
     font-weight: 600;
     font-size: 32px;
-    line-height: 120%;
+    line-height: 38px;
   }
   .about__numbers {
     -webkit-column-gap: 170px;
@@ -290,7 +290,7 @@ a {
   .about__numbers-title {
     font-weight: 600;
     font-size: 80px;
-    line-height: 80%;
+    line-height: 64px;
   }
   .about__numbers-title > span {
     padding-left: 10px;
@@ -349,7 +349,7 @@ a {
 .map__title {
   font-weight: 600;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 20px;
 }
 
 .map__arrow {
@@ -437,7 +437,7 @@ a {
   .map__title {
     font-weight: 600;
     font-size: 24px;
-    line-height: 100%;
+    line-height: 24px;
   }
   .map__nav-item {
     margin-left: 30px;
@@ -482,7 +482,7 @@ a {
   color: #FFFFFF;
   font-weight: 600;
   font-size: 28px;
-  line-height: 100%;
+  line-height: 28px;
 }
 
 .mission__subtitle {
@@ -490,7 +490,7 @@ a {
   color: #FFFFFF;
   font-weight: 400;
   font-size: 16px;
-  line-height: 130%;
+  line-height: 21px;
 }
 
 @media (min-width: 1024px) {
@@ -508,13 +508,13 @@ a {
   .mission__title {
     font-weight: 600;
     font-size: 56px;
-    line-height: 100%;
+    line-height: 56px;
   }
   .mission__subtitle {
     padding: 0 5px;
     font-weight: 400;
     font-size: 32px;
-    line-height: 150%;
+    line-height: 48px;
   }
 }
 /*Solutions*/
@@ -526,7 +526,7 @@ a {
   text-align: center;
   font-weight: 600;
   font-size: 28px;
-  line-height: 100%;
+  line-height: 28px;
 }
 
 .solutions__nav {
@@ -576,7 +576,7 @@ a {
   z-index: 100;
   font-weight: 600;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 20px;
 }
 
 .solutions__nav-subtitle {
@@ -595,7 +595,7 @@ a {
     padding-bottom: 55px;
     font-weight: 600;
     font-size: 56px;
-    line-height: 100%;
+    line-height: 56px;
   }
   .solutions__nav {
     display: -ms-grid;
@@ -630,7 +630,7 @@ a {
         align-self: end;
     font-weight: 600;
     font-size: 24px;
-    line-height: 100%;
+    line-height: 24px;
   }
   .solutions__nav-subtitle {
     max-width: 480px;
@@ -639,7 +639,7 @@ a {
     z-index: 100;
     font-weight: 400;
     font-size: 17px;
-    line-height: 140%;
+    line-height: 24px;
   }
   .solutions__nav-arrow {
     display: none;
@@ -749,11 +749,10 @@ a {
 
 .benefits-reg__list-title,
 .benefits-extra__list-title {
-  max-width: 120px;
   padding-top: 10px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 110%;
+  line-height: 18px;
 }
 
 .benefits-extra__title {
@@ -761,7 +760,7 @@ a {
   padding-top: 24px;
   font-weight: 600;
   font-size: 22px;
-  line-height: 120%;
+  line-height: 26px;
 }
 
 .benefits-extra__subtitle {
@@ -778,7 +777,7 @@ a {
 }
 
 .benefits-extra__list-item {
-  width: 72px;
+  width: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -788,7 +787,7 @@ a {
   .benefits-reg__title {
     font-weight: 600;
     font-size: 56px;
-    line-height: 100%;
+    line-height: 56px;
   }
   .benefits-reg__list {
     -webkit-box-pack: justify;
@@ -821,7 +820,7 @@ a {
 .benefits-extra__list-title {
     font-weight: 400;
     font-size: 18px;
-    line-height: 110%;
+    line-height: 20px;
   }
   .benefits-reg__list-title {
     max-width: 100%;
@@ -833,7 +832,7 @@ a {
     padding: 0;
     font-weight: 600;
     font-size: 40px;
-    line-height: 120%;
+    line-height: 48px;
   }
   .benefits-extra__list {
     -webkit-box-pack: center;
@@ -852,7 +851,7 @@ a {
 .corp-life__title {
   font-weight: 600;
   font-size: 28px;
-  line-height: 100%;
+  line-height: 28px;
 }
 
 .swiper {
