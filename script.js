@@ -27,6 +27,16 @@ if (document.documentElement.clientWidth > 1200) {
 //Slider
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
-    loop: true
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 });
 
