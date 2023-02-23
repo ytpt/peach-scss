@@ -173,7 +173,7 @@ a {
 .main__title {
     max-width: 280px;
     padding: 0 20px 20px 0;
-    @include title(600, 28px, 100%);
+    @include title(600, 28px, 28px);
 }
 
 .main__button {
@@ -201,7 +201,7 @@ a {
     .main__title {
         max-width: 709px;
         margin-bottom: 60px;
-        @include title(600, 56px, 100%);
+        @include title(600, 56px, 56px);
     }
 
     .main__button {
@@ -227,7 +227,7 @@ a {
     padding: 24px 5px;
     text-align: center;
     background: #FFFFFF;
-    @include title(600, 16px, 120%);
+    @include title(600, 16px, 19px);
     @include box-shadow(16px, 0.08);
 }
 
@@ -250,7 +250,7 @@ a {
 .about__numbers-title {
     color: #A30C33;
     opacity: 0.95;
-    @include title(600, 40px, 80%);
+    @include title(600, 40px, 32px);
 }
 
 .about__numbers-title > span {
@@ -262,7 +262,7 @@ a {
 }
 
 .about__numbers-subtitle {
-    @include title(400, 16px, 150%);
+    @include title(400, 16px, 19px);
 }
 
 @media (min-width: 1024px) {
@@ -273,7 +273,7 @@ a {
     .about__title {
         margin: 70px 100px;
         padding: 99px 110px;
-        @include title(600, 32px, 120%);
+        @include title(600, 32px, 38px);
     }
 
     .about__numbers {
@@ -288,7 +288,7 @@ a {
     }
 
     .about__numbers-title {
-        @include title(600, 80px, 80%);
+        @include title(600, 80px, 64px);
     }
 
     .about__numbers-title > span {
@@ -327,7 +327,7 @@ a {
 }
 
 .map__title {
-    @include title(600, 20px, 100%);
+    @include title(600, 20px, 20px);
 }
 
 .map__arrow {
@@ -391,7 +391,7 @@ a {
     }
 
     .map__title {
-        @include title(600, 24px, 100%);
+        @include title(600, 24px, 24px);
     }
 
     .map__nav-item {
@@ -438,13 +438,13 @@ a {
 .mission__title {
     text-align: center;
     color: #FFFFFF;
-    @include title(600, 28px, 100%);
+    @include title(600, 28px, 28px);
 }
 
 .mission__subtitle {
     text-align: center;
     color: #FFFFFF;
-    @include title(400,16px, 130%);
+    @include title(400, 16px, 21px);
 }
 
 @media (min-width: 1024px) {
@@ -463,12 +463,12 @@ a {
     }
 
     .mission__title {
-        @include title(600, 56px, 100%);
+        @include title(600, 56px, 56px);
     }
 
     .mission__subtitle {
         padding: 0 5px;
-        @include title(400, 32px, 150%);
+        @include title(400, 32px, 48px);
     }
 }
 
@@ -479,7 +479,7 @@ a {
 
 .solutions__title {
     text-align: center;
-    @include title(600, 28px, 100%);
+    @include title(600, 28px, 28px);
 }
 
 .solutions__nav {
@@ -527,7 +527,7 @@ a {
     width: 225px;
     color: #FFFFFF;
     z-index: 100;
-    @include title(600, 20px, 100%);
+    @include title(600, 20px, 20px);
 }
 
 .solutions__nav-subtitle {
@@ -545,7 +545,7 @@ a {
 
     .solutions__title {
         padding-bottom: 55px;
-        @include title(600, 56px, 100%);
+        @include title(600, 56px, 56px);
     }
 
     .solutions__nav {
@@ -577,7 +577,7 @@ a {
     .solutions__nav-title {
         width: 320px;
         align-self: end;
-        @include title(600, 24px, 100%);
+        @include title(600, 24px, 24px);
     }
 
     .solutions__nav-subtitle {
@@ -585,7 +585,7 @@ a {
         text-align: left;
         color: #FFFFFF;
         z-index: 100;
-        @include title(400, 17px, 140%);
+        @include title(400, 17px, 24px);
     }
 
     .solutions__nav-arrow {
@@ -652,15 +652,14 @@ a {
 
 .benefits-reg__list-title,
 .benefits-extra__list-title {
-    max-width: 120px;
     padding-top: 10px;
-    @include title(400, 16px, 110%);
+    @include title(400, 16px, 18px);
 }
 
 .benefits-extra__title {
     text-align: center;
     padding-top: 24px;
-    @include title(600, 22px, 120%);
+    @include title(600, 22px, 26px);
 }
 
 .benefits-extra__subtitle {
@@ -675,7 +674,7 @@ a {
 }
 
 .benefits-extra__list-item {
-    width: 72px;
+    width: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -684,7 +683,7 @@ a {
     }
 
     .benefits-reg__title {
-        @include title(600, 56px, 100%);
+        @include title(600, 56px, 56px);
     }
 
     .benefits-reg__list {
@@ -709,7 +708,7 @@ a {
 
     .benefits-reg__list-title,
     .benefits-extra__list-title {
-        @include title(400, 18px, 110%);
+        @include title(400, 18px, 20px);
     }
 
     .benefits-reg__list-title {
@@ -722,7 +721,7 @@ a {
 
     .benefits-extra__title {
         padding: 0;
-        @include title(600, 40px, 120%);
+        @include title(600, 40px, 48px);
     }
 
     .benefits-extra__list {
@@ -735,6 +734,7 @@ a {
         width: 110px;
     }
 }
+
 /*Corp-life*/
 .corp-life {
     padding: 50px 0;
@@ -742,7 +742,7 @@ a {
 
 .corp-life__title {
     padding: 50px 0 80px 0;
-    @include title(600, 28px, 100%);
+    @include title(600, 28px, 28px);
     @extend %text-color;
 }
 
